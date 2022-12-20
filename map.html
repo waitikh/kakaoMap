@@ -22,4 +22,12 @@
     };
 
     var map = new kakao.maps.Map(container, options);
+    
+    var markerPosition  = new kakao.maps.LatLng(mapy, mapx); 
+    
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+    
+    marker.setMap(map);
 </script>
